@@ -1,5 +1,6 @@
 node_modules
 .DS_Store
+nodeTest.js
 
 # Logs
 logs
@@ -59,4 +60,3 @@ typings/
 
 # dotenv environment variables file
 .env
-
