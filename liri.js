@@ -16,7 +16,7 @@ var access_token_secret = keys.access_token_secret;
 
 var action = process.argv[2];
 
-var songQuery = 'jadksfja990ahsdf';
+var songQuery = 'daslfkjiu8498';
 
 switch (action){
   case "my-tweets":
@@ -51,7 +51,8 @@ var info = data.tracks.items[0];
     trackInfo.push(data.tracks.items[0].external_urls.spotify);
     trackInfo.join(' ,');
     console.log(trackInfo);
-  } else if (data.tracks.items[0] === null || data.tracks.items[0] === "undefined") {
+  }
+   else if (data.tracks.items[0] === null || data.tracks.items[0] === "undefined") {
     console.log('No Dice');
   }
 
