@@ -41,13 +41,13 @@ var client = new Twitter({
  access_token_key : keys.twitterKeys.access_token_key,
  access_token_secret : keys.twitterKeys.access_token_secret,
 });
+
 var params = {screen_name: '@jheal006'};
 client.get('statuses/user_timeline', params, function(error, tweets, response) {
-
-  console.log(client.consumer_key);
   if (!error) {
-    console.log(tweets);
+    console.log(tweets.text);
   }
+  console.log(error);
 });
 
 
