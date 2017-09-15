@@ -8,7 +8,7 @@ var request = require('request');
 //Capture User Command at Index 2
 var action = process.argv[2];
 
-///Bait switch the fools!!!!! Just kidding, actually just use a switch statement to run different functions depending on the command.
+///Bait and switch the fools!!!!! Just kidding, actually just use a switch statement to run different functions depending on the command.
 switch (action) {
   // Command to display tweets
   case "my-tweets":
