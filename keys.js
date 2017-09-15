@@ -1,4 +1,5 @@
-console.log('this is loaded');
+// Log of all the Node / API Keys
+console.log('Access loaded');
 
 var twitterKeys = {
   consumer_key: 'nxv6X98NVv1jhJEXq8MIoS1p4',
