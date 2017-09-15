@@ -1,10 +1,10 @@
 console.log('this is loaded');
 
 var twitterKeys = {
-  consumer_key: 'dG3X1MkTjEk18eS09kauNfpY5',
-  consumer_secret: 'RVHNrQmHexX83I1BJccJMQDcBB7QnyqdDNR2XvHHzDx7sVciqQ',
-  access_token_key: '907796430592471040-2ABwyJWsp4CbXVzDwjB2OhdlIIfwfHG',
-  access_token_secret: ' y08Qdn2iLIFBjJmPgodlDpUzBa4s40VZCgML5Kf2S4xof',
+  consumer_key: 'nxv6X98NVv1jhJEXq8MIoS1p4',
+  consumer_secret: 'ovIBqKqEnKJMZ4NF2ueLCHgA0KBKCXizbIwcmNKOCx8dp19vQc',
+  access_token_key: '907796430592471040-GJv1r5r13cry8FmkAqlFfUfyy0UsFE4',
+  access_token_secret: 'aevdOlhVidY6kqOhgWbpaKgtDRjsz2rzkWwaScvY3UmA4',
 }
 
 var spotifyKeys = {

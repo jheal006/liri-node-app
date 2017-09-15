@@ -4,15 +4,13 @@ var Twitter = require('twitter');
 var Spotify = require('node-spotify-api');
 var request = require('request');
 
-
 var action = process.argv[2];
 
-// var songQuery = 'Palaces of Montezuma';
-// var movieQuery = 'Tombstone';
+///Bait switch the fools!!! Just kidding, actually just use a switch statement to run different functions depending on the command.
 
 switch (action) {
   case "my-tweets":
-    total();
+    my_tweets();
     break;
 
   case "spotify-this-song":
@@ -35,22 +33,24 @@ switch (action) {
 //      Search Twitter API     //
 /////////////////////////////////
 
-var client = new Twitter({
- consumer_key : keys.twitterKeys.consumer_key,
- consumer_secret : keys.twitterKeys.consumer_secret,
- access_token_key : keys.twitterKeys.access_token_key,
- access_token_secret : keys.twitterKeys.access_token_secret,
-});
-
-var params = {screen_name: '@jheal006'};
-client.get('statuses/user_timeline', params, function(error, tweets, response) {
-  if (!error) {
-    console.log(tweets.text);
-  }
-  console.log(error);
-});
+function my_tweets(){
+  var client = new Twitter({
+   consumer_key : keys.twitterKeys.consumer_key,
+   consumer_secret : keys.twitterKeys.consumer_secret,
+   access_token_key : keys.twitterKeys.access_token_key,
+   access_token_secret : keys.twitterKeys.access_token_secret,
+  });
 
 
+var params = { screen_name: 'jheal006' };
+    client.get('statuses/user_timeline', params, function (error, tweets, response) {
+        if (!error) {
+          for (var i = 0; i < 20; i++)
+            console.log(tweets[i].text);
+        }
+      console.log(error);
+    });
+};
 
 
 /////////////////////////////////
